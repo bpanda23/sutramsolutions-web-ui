@@ -10,11 +10,5 @@ import { Router, RouterModule } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
-  constructor(private router: Router) {}
-
-  
-  isHomePage(): boolean {
-    return this.router.url === '/' || this.router.url === '/home';
-  }
+      constructor(public router: Router) {}
 }

@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     { path: '', loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent) },
-    { path: 'home2', loadComponent: () => import('./pages/home2/home2.component').then(m => m.Home2Component) },
     { path: 'about-us', loadComponent: () => import('./pages/about-us/about-us.component').then(m => m.AboutUsComponent) },
     { path: 'contact-us', loadComponent: () => import('./pages/contact-us/contact-us.component').then(m => m.ContactUsComponent) },
     { path: 'error-page', loadComponent: () => import('./pages/error-page/error-page.component').then(m => m.ErrorPageComponent) },
@@ -24,7 +23,5 @@ export const routes: Routes = [
     { path: 'blog-single-right-sidebar', loadComponent: () => import('./blog/blog-single-right-sidebar/blog-single-right-sidebar.component').then(m => m.BlogSingleRightSidebarComponent) },
     { path: 'blog-single', loadComponent: () => import('./blog/blog-single/blog-single.component').then(m => m.BlogSingleComponent) },
     { path: 'blog-standard', loadComponent: () => import('./blog/blog-standard/blog-standard.component').then(m => m.BlogStandardComponent) },
-    
-
     { path: '**', redirectTo: '' }
 ];
