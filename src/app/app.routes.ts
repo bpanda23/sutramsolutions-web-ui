@@ -8,6 +8,7 @@ export const routes: Routes = [
     { path: 'gallery-grid-colum', loadComponent: () => import('./pages/gallery-grid-colum/gallery-grid-colum.component').then(m => m.GalleryGridColumComponent) },
     { path: 'gallery-masonary-colum', loadComponent: () => import('./pages/gallery-masonary-colum/gallery-masonary-colum.component').then(m => m.GalleryMasonaryColumComponent) },
     { path: 'login', loadComponent: () => import('./pages/login/login.component').then(m => m.LoginComponent) },
+    { path: 'reset-password', loadComponent: () => import('./pages/reset-password/reset-password.component').then(m => m.ResetPasswordComponent) },
     { path: 'register', loadComponent: () => import('./pages/register/register.component').then(m => m.RegisterComponent) },
     { path: 'advisor-carousel', loadComponent: () => import('./teachers/advisor-carousel/advisor-carousel.component').then(m => m.AdvisorCarouselComponent) },
     { path: 'advisor-grid', loadComponent: () => import('./teachers/advisor-grid/advisor-grid.component').then(m => m.AdvisorGridComponent) },
